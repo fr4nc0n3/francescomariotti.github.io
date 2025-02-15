@@ -2,6 +2,7 @@ const correctPassword = "francescopsw";
 const pswKey = "password"; //localstorage key
 
 const loginForm = document.getElementById("loginForm");
+const content = document.getElementById("content");
 const passwordField = document.getElementById("password");
 
 loginForm.addEventListener("submit", function (event) {
@@ -27,8 +28,8 @@ window.onload = function () {
 };
 
 const unlock = () => {
-    document.getElementById("content").style.display = "block";
-    document.getElementById("loginForm").style.display = "none";
+    content.style.display = "block";
+    loginForm.style.display = "none";
 };
 
 const isPasswordValid = (password) => {
