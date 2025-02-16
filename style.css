@@ -21,13 +21,13 @@ body {
 /* Stili per mobile */
 @media (max-width: 600px) {
     p {
-        font-size: 16px;
+        font-size: 24px;
     }
 }
 
 /* Stili per desktop */
 @media (min-width: 601px) {
     p {
-        font-size: 20px;
+        font-size: 36px;
     }
 }
