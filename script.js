@@ -1,37 +1,10 @@
-const correctPassword = "francescopsw";
-const pswKey = "password"; //localstorage key
+import { getMoonPhase } from "./utility.js";
 
-const loginForm = document.getElementById("loginForm");
-const content = document.getElementById("content");
-const passwordField = document.getElementById("password");
+// set date
+const date = document.getElementById("date");
+date.innerHTML = new Date().toLocaleDateString();
 
-loginForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    const password = passwordField.value;
-
-    if (isPasswordValid(password)) {
-        localStorage.setItem(pswKey, password);
-
-        unlock();
-    } else {
-        alert("Password errata. Riprova.");
-    }
-});
-
-window.onload = function () {
-    const storedPassword = localStorage.getItem(pswKey);
-
-    if (isPasswordValid(storedPassword)) {
-        unlock();
-    }
-};
-
-const unlock = () => {
-    content.style.display = "block";
-    loginForm.style.display = "none";
-};
-
-const isPasswordValid = (password) => {
-    return password === correctPassword;
-};
+// set moon phase
+const moonPhase = document.getElementById("moon-phase");
+const todayMoonPhase = getMoonPhase(new Date());
+moonPhase.innerHTML = todayMoonPhase.phase + " " + todayMoonPhase.description;
