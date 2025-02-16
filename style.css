@@ -8,3 +8,33 @@ body {
     height: 100vh;
     width: 100vw;
 }
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    div {
+        padding: 15px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Stili per desktop */
+@media (min-width: 601px) {
+    p {
+        font-size: 20px;
+    }
+}
