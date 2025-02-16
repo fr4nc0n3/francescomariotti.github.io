@@ -18,15 +18,8 @@ body {
     align-items: center;
 }
 
+/* Stili per mobile */
 @media (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
-
-    div {
-        padding: 15px;
-    }
-
     p {
         font-size: 16px;
     }
