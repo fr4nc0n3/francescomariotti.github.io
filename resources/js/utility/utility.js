@@ -1,4 +1,4 @@
-import { MOON_PHASES } from "./constants.js";
+import { MOON_PHASES } from "../constants.js";
 
 const moonCycleDays = 29.53059;
 const newMoonKnownDate = new Date("2025-01-29");

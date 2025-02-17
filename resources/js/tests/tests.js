@@ -1,4 +1,4 @@
-import { getMoonPhase } from "./utility.js";
+import { getMoonPhase } from "../utility/utility.js";
 import { IDX_FULL_MOON, IDX_NEW_MOON, MOON_PHASES } from "./constants.js";
 
 console.log("[start tests]");

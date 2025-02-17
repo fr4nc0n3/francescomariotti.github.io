@@ -1,4 +1,4 @@
-import { getMoonPhase } from "./utility.js";
+import { getMoonPhase } from "./utility/utility.js";
 
 // set date
 const date = document.getElementById("date");
