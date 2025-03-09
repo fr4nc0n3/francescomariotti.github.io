@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Week</title>
+        <link rel="stylesheet" href="resources/css/style.css" />
+
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                text-align: center;
+                border: 1px solid black;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="button" onclick="window.location.href='index.html'">
+            HOME
+        </button>
+        <table>
+            <thead id="thead">
+                <tr>
+                    <!--<th></th>-->
+                    <th>Lunedi'</th>
+                    <th>Martedi'</th>
+                    <th>Mercoledi'</th>
+                    <th>Giovedi'</th>
+                    <th>Venerdi'</th>
+                    <th>Sabato</th>
+                    <th>Domenica</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <!--LUNEDI'-->
+                    <td>
+                        10 min riscaldamento<br />
+                        30 min statica<br />
+                        15 min pushups<br />
+                        15 min addominali<br />
+                        15 min squat bulgaro<br />
+                        15 min trazioni<br />
+                    </td>
+                    <!--MARTEDI'-->
+                    <td>
+                        1h corsa<br />
+                        15 min pushups<br />
+                        15 min addominali<br />
+                        15 min squat bulgaro<br />
+                        15 min trazioni<br />
+                    </td>
+                    <!--MERCOLEDI'-->
+                    <td>
+                        30 min corsa<br />
+                        30 min statica<br />
+                        15 min pushups<br />
+                        15 min addominali<br />
+                        15 min squat bulgaro<br />
+                        15 min trazioni<br />
+                    </td>
+                    <!--GIOVEDI'-->
+                    <td>Canottieri remoergometro<br /></td>
+                    <!--VENERDI'-->
+                    <td>
+                        30 min corsa<br />
+                        30 min statica<br />
+                        15 min pushups<br />
+                        15 min addominali<br />
+                        15 min squat bulgaro<br />
+                        15 min trazioni<br />
+                    </td>
+                    <!--SABATO-->
+                    <td>
+                        1h corsa<br />
+                        15 min pushups<br />
+                        15 min addominali<br />
+                        15 min squat bulgaro<br />
+                        15 min trazioni<br />
+                    </td>
+                    <!--DOMENICA-->
+                    <td>
+                        2h corsa + camminata<br />
+                        / <br />camminata lunga montagna
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+
+    <script>
+        const hours = [
+            ["5:00", "-", "-", "-", "-", "-", "-", "-"],
+            ["5:30", "-", "-", "-", "-", "-", "-", "-"],
+            ["6:00", "-", "-", "-", "-", "-", "-", "-"],
+            ["6:30", "-", "-", "-", "-", "-", "-", "-"],
+            ["7:00", "-", "-", "-", "-", "-", "-", "-"],
+            ["7:30", "-", "-", "-", "-", "-", "-", "-"],
+            ["8:00", "-", "-", "-", "-", "-", "-", "-"],
+            ["8:30", "-", "-", "-", "-", "-", "-", "-"],
+            ["9:00", "-", "-", "-", "-", "-", "-", "-"],
+            ["9:30", "-", "-", "-", "-", "-", "-", "-"],
+            ["10:00", "-", "-", "-", "-", "-", "-", "-"],
+            ["10:30", "-", "-", "-", "-", "-", "-", "-"],
+            ["11:00", "-", "-", "-", "-", "-", "-", "-"],
+            ["11:30", "-", "-", "-", "-", "-", "-", "-"],
+            ["12:00", "-", "-", "-", "-", "-", "-", "-"],
+            ["12:30", "-", "-", "-", "-", "-", "-", "-"],
+            ["13:00", "-", "-", "-", "-", "-", "-", "-"],
+            ["13:30", "-", "-", "-", "-", "-", "-", "-"],
+            ["14:00", "-", "-", "-", "-", "-", "-", "-"],
+            ["14:30", "-", "-", "-", "-", "-", "-", "-"],
+            ["15:00", "-", "-", "-", "-", "-", "-", "-"],
+            ["15:30", "-", "-", "-", "-", "-", "-", "-"],
+            ["16:00", "-", "-", "-", "-", "-", "-", "-"],
+            ["16:30", "-", "-", "-", "-", "-", "-", "-"],
+            ["17:00", "-", "-", "-", "-", "-", "-", "-"],
+            ["17:30", "-", "-", "-", "-", "-", "-", "-"],
+            ["18:00", "-", "-", "-", "-", "-", "-", "-"],
+            ["18:30", "-", "-", "-", "-", "-", "-", "-"],
+            ["19:00", "-", "-", "-", "-", "-", "-", "-"],
+            ["19:30", "-", "-", "-", "-", "-", "-", "-"],
+            ["20:00", "-", "-", "-", "-", "-", "-", "-"],
+            ["20:30", "-", "-", "-", "-", "-", "-", "-"],
+            ["21:00", "-", "-", "-", "-", "-", "-", "-"],
+            ["21:30", "-", "-", "-", "-", "-", "-", "-"],
+            ["22:00", "-", "-", "-", "-", "-", "-", "-"],
+            ["22:30", "-", "-", "-", "-", "-", "-", "-"],
+            ["23:00", "-", "-", "-", "-", "-", "-", "-"],
+            ["23:30", "-", "-", "-", "-", "-", "-", "-"],
+        ];
+
+        /*const tbody = document.querySelector("#tbody");
+        tbody.innerHTML += hours
+            .map(
+                (hour) =>
+                    `<tr><th>${hour[0]}</th>
+                        ${hour
+                            .slice(1)
+                            .map((work) => `<td>${work}</td>`)
+                            .join("")}</tr>`
+            )
+            .join("");*/
+    </script>
+</html>
